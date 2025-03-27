@@ -48,12 +48,12 @@
         .back-btn:hover {
             text-decoration: underline;
         }
-        table { 
+        table{ 
             width: 100%; 
             border-collapse: collapse; 
             margin-top: 20px; 
         }
-        th, td { 
+        th,td { 
             padding: 12px; 
             text-align: center; 
             border-bottom: 1px solid #ddd; 
@@ -87,11 +87,10 @@
     <div class="header-container">
         <div class="commodity-header">
             <a href="/" class="back-btn">← Back to Commodities</a>
-            <h1>{{ commodity }} Price Predictions</h1>
+            <h1>{{ commodity }} PRICE PREDICTION</h1>
             
             <div class="price-summary">
-                <p>Base Price: ₹{{ commodity_info.base_price }} per {{ commodity_info.unit }}</p>
-                <p>Next 12 months forecast (WPI converted to actual prices)</p>
+                <h3>Next 12 months forecast (WPI converted to actual prices)</h3>
             </div>
         </div>
         
@@ -105,8 +104,6 @@
         <thead>
             <tr>
                 <th>Month/Year</th>
-                <th>Rainfall (mm)</th>
-                <th>Predicted WPI</th>
                 <th>Predicted Price</th>
             </tr>
         </thead>
@@ -114,8 +111,6 @@
             {% for pred in predictions %}
             <tr>
                 <td>{{ pred.month }}/{{ pred.year }}</td>
-                <td>{{ pred.rainfall }}</td>
-                <td>{{ pred.wpi }}</td>
                 <td class="highlight">₹{{ pred.price }}</td>
             </tr>
             {% endfor %}
