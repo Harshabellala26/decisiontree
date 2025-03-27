@@ -13,10 +13,10 @@ app.secret_key = 'your-secret-key-here'
 
 # Configuration with adjusted base prices
 COMMODITIES = {
-    "paddy": {"base_price": 1000, "file": "paddy.csv", "unit": "quintal", "image": "paddy.jpeg"},
-    "wheat": {"base_price": 2100, "file": "wheat.csv", "unit": "quintal", "image": "wheat.jpg"},
-    "sugarcane": {"base_price": 2900, "file": "sugarcane.csv", "unit": "ton", "image": "sugarcane.jpg"},
-    "jowar": {"base_price": 2400, "file": "jowar.csv", "unit": "quintal", "image": "jowar.jpg"}
+    "paddy": {"base_price": 1200, "file": "paddy.csv", "unit": "quintal", "image": "paddy.jpeg"},
+    "wheat": {"base_price": 1400, "file": "wheat.csv", "unit": "quintal", "image": "wheat.jpg"},
+    "sugarcane": {"base_price": 1500, "file": "sugarcane.csv", "unit": "ton", "image": "sugarcane.jpg"},
+    "jowar": {"base_price": 1550, "file": "jowar.csv", "unit": "quintal", "image": "jowar.jpg"}
 }
 
 def load_data(commodity):
